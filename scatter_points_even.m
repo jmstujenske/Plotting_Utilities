@@ -117,7 +117,7 @@ while keep_going
     end
     % advance in the while loop as long as the cutUp value is out of the
     % range of the points
-    keep_going=~(cutUp>max(yValues) || cutUp<min(yValues));
+    keep_going=~(cutUp>max(yValues) | cutUp<min(yValues));
     if iter>1000
         keep_going=false;
     end
